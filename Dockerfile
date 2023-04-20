@@ -11,6 +11,8 @@ RUN apt -qq update --fix-missing && \
 RUN apt-get -y clean
 RUN apt-get -y autoremove
 
+Expose 80 
+
 COPY . .
 
 CMD ["bash", "start.sh"]
